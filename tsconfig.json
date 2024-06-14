@@ -1,0 +1,26 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "target": "ES2017",
+    "module": "nodenext",
+    "types": [
+      "node",
+      "cypress"
+    ],
+    "lib": [
+      "dom",
+      "ESNext"
+    ]
+  },
+  "exclude": [
+    "lib/**/*.test.ts"
+  ]
+}

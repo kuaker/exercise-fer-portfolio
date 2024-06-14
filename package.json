@@ -1,0 +1,39 @@
+{
+  "name": "automationportfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:qa": "npx cypress run --env version=qa",
+    "cy:staging": "npx cypress run --env version=staging"
+  },
+  "keywords": [],
+  "author": "Fernando J. Arroupe",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress/webpack-preprocessor": "latest",
+    "@types/chance": "^1.1.6",
+    "cypress": "^13.11.0",
+    "ts-loader": "latest",
+    "typescript": "^5.4.5",
+    "webpack": "^5.92.0"
+  },
+  "dependencies": {
+    "chance": "^1.1.11",
+    "dotenv": "^16.4.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "cypress/e2e/steps/**/*.ts"
+    ],
+    "html": {
+      "enabled": true
+    }
+  }
+}
