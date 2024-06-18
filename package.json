@@ -7,7 +7,8 @@
     "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",
     "cy:qa": "npx cypress run --env version=qa",
-    "cy:staging": "npx cypress run --env version=staging"
+    "cy:staging": "npx cypress run --env version=staging",
+    "cy:run:smoke": "npx cypress run --env version=qa -e TAGS=@smoke"
   },
   "keywords": [],
   "author": "Fernando J. Arroupe",
