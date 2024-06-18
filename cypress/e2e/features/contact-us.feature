@@ -6,6 +6,7 @@ Feature: Contact us
         Given I navigate to home page
         Then I verify that home page is visible successfully
 
+    @smoke
     Scenario: Contact Us Form
         And I click on Contact Us button
         Then I verify GET IN TOUCH is visible

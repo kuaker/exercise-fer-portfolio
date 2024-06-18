@@ -24,7 +24,7 @@ Feature: Product
         And I click on View Product of first product
         And The user is landed to product detail page
         Then I verify that detail detail is visible: product name, category, price, availability, condition, brand
-
+    @smoke
     Scenario: Search Product
         When I click on Products button
         Then I verify user is navigated to ALL PRODUCTS page successfully
